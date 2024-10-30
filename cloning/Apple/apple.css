@@ -1,0 +1,353 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif";
+  cursor: pointer;
+}
+nav {
+  padding: 0%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgba(250, 250, 252, 0.8);
+}
+nav ul {
+  /* position: relative; */
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+.sub-nav {
+  background-color: #fff;
+  color: #1d1d1f;
+  /* border: 4px solid black; */
+  /* height: 5  0px; */
+}
+.EMI {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 25%;
+  /* border: 3px solid cadetblue; */
+
+  height: 30px;
+}
+.EMI a {
+  color: #0071e3;
+  text-decoration: none;
+  font-size: 14px;
+}
+.main {
+  height: 100%;
+  /* border: 3px solid black; */
+  background-color: #f5f5f7;
+}
+#section1 {
+  /* padding-top: 10px; */
+  /* border: 2px solid red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 30px;
+  /* background-image: url("../images/image.png"); */
+}
+h2 {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+}
+p {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 400;
+  margin-top: 3px;
+}
+p + p {
+  color: #6e6e73;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 15px;
+}
+.btn button {
+  padding: 12px;
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0071e3;
+  font-size: 17px;
+  font-weight: 500;
+  columns: #fff;
+}
+.btn button + button {
+  background-color: blur;
+  color: #0071e3;
+  background: none;
+  border: 1px solid;
+  width: 160px;
+}
+.btn button + button:hover {
+  color: #fff;
+  background-color: #0071e3;
+  cursor: pointer;
+}
+
+.bg-img {
+  /* border: 2px solid cyan; */
+  height: 60vh;
+  width: 85%;
+  margin: auto;
+  margin-top: 0px;
+  background-image: url(../images/phones.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+svg {
+  position: relative;
+  top: 4px;
+}
+.lower {
+  position: relative;
+  height: 100vh;
+  border: 2px solid#1d1d1f;
+  overflow: hidden;
+
+  /* box-sizing: border-box; */
+}
+.lower svg {
+  height: 200px;
+  position: absolute;
+  width: 350px;
+  fill: #007aff;
+  /* transform: rotate(-12deg); */
+  rotate: -8deg;
+  top: 70px;
+  left: 40%;
+}
+.lower h2,
+h1,
+h3 {
+  margin: auto;
+  width: 300px;
+  /* background-color: #f5f5f7; */
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 2.7em;
+  position: absolute;
+  top: 100px;
+  color: white;
+  left: 43%;
+  z-index: 1;
+  /* clip: rect(1px, 1px, 1px, 1px); */
+  transform: rotate(-12deg);
+}
+#love {
+  position: absolute;
+  top: 70px;
+  left: 520px;
+  /* border: 2px solid#1515d5; */
+}
+#tabs {
+  position: absolute;
+  top: 240px;
+  left: 500px;
+  /* border: 2px solid red; */
+}
+.laptop {
+  position: absolute;
+  /* border:3px solid red; */
+  top: 26px;
+  left: 770px;
+}
+#education svg {
+  height: 50px;
+  width: 290px;
+  /* rotate: 10deg; */
+  transform: rotate(1deg);
+  fill: #007aff;
+  position: absolute;
+  top: 260px;
+  left: 650px;
+  z-index: -10;
+  border-top: 10px solid rgb(241, 239, 243);
+  border-top-left-radius: 26px;
+  /* border-top-right-radius: 26px; */
+
+  /* border-bottom-left-radius: 36px;  */
+}
+.education1 {
+  width: 290px;
+  position: absolute;
+  top: 274px;
+  left: 630px;
+  text-align: center;
+  transform: rotate(-8deg);
+  font-weight: 600;
+  font-size: 1.4em;
+  color: white;
+  /* border: 2px solid red; */
+}
+#airpods svg {
+  rotate: 10deg;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 330px;
+  /* z-index: -1; */
+  left: 700px;
+}
+.airpods {
+  position: absolute;
+  rotate: 10deg;
+
+  top: 339px;
+  z-index: 1;
+  left: 740px;
+  font-weight: 600;
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+}
+.airpodsimg {
+  position: absolute;
+  top: 410px;
+  left: 890px;
+  height: 100px;
+}
+#pencil svg {
+  position: absolute;
+  rotate: 10deg;
+  top: 410px;
+  left: 600px;
+  width: 350px;
+  height: 130px;
+}
+.pencil {
+  position: absolute;
+  top: 420px;
+  left: 630px;
+  z-index: 1;
+  rotate: 10deg;
+  font-weight: 600;
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+}
+.mypen {
+  position: absolute;
+  top: 450px;
+  left: 738px;
+  height: 80px;
+}
+#store svg {
+  position: absolute;
+  fill: #e1dfe5;
+  rotate: -1deg;
+  top: 530px;
+  left: 650px;
+  width: 300px;
+  height: 50px;
+}
+.store {
+  position: absolute;
+  rotate: -1deg;
+  top: 535px;
+  left: 665px;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgb(22, 21, 21);
+  text-align: center;
+}
+
+.foot {
+  position: absolute;
+  top: 510px;
+  left: 900px;
+  width: 40px;
+}
+.shop {
+  position: absolute;
+  top: 600px;
+  left: 730px;
+  width: 90px;
+  height: 50px;
+  border-style: solid;
+  border-radius: 980px;
+  background: rgba(0, 0, 0, 0);
+  color: #06c;
+  border-color: #06c;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+.girl{
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  /* border: 3px solid red; */
+background-image: url("../images/girl.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.headline{
+  position: absolute;
+  top:550px;
+  color: white;
+  left: 450px;
+  /* border: 3px solid red; */
+}
+.subhead{
+   position: absolute;
+  top:650px;
+  color: white;
+  left: 550px;
+  /* border: 3px solid red; */
+  rotate: -1deg;
+}
+.girlbutton{
+  height:50px ;
+  width: 170px;
+  text-align: center;
+  position: absolute;
+  top:700px;
+  color: white;
+  left: 590px;
+  border: 3px solid ;
+  border-radius: 980px;
+    border-color: #06c;
+
+
+  /* rotate: -2deg; */
+}
+.allmobiles{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+border: 3px solid;
+  
+}
+.allmobiles2{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+border: 3px solid;
+}
+.one1,.two,.three,.four{
+  height: 400px;
+  width: 50%;
+  border: 3px solid red;
+} 

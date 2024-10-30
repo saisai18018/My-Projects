@@ -1,0 +1,17 @@
+.container{
+    border: 2px solid black;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 500px;
+}
+ul{
+    text-align: left;
+    display: inline-block;
+}
+.bg-container{
+    background-image: radial-gradient(#fff8db, #fae38b);
+    height: 100vh;
+    background-size: cover;
+}
+

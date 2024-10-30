@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="inc">+</button>
+    <h1 id="count"></h1>
+    <button id="dec">-</button>
+    <script>
+        let incc = document.getElementById('inc')
+        let decc = document.getElementById('dec')
+        let tagg = document.querySelector('#count')
+        let count = 0
+        tagg.innerHTML = count
+        function colorchange() {
+            if (count < 0) {
+                tagg.style.color = 'white';
+            } else if (count === 0) {
+                tagg.style.color = 'black';
+            } else if (count >= 1 && count <= 5) {
+                tagg.style.color = 'orange';
+            } else if (count === 6) {
+                tagg.style.color = 'aqua';
+            } else if (count >= 7 && count <= 10) {
+                tagg.style.color = 'green';
+            } else if (count > 10) {
+                tagg.style.color = 'violet';
+            }
+        }
+        function bodychange() {
+            if (count < 0) {
+                document.body.style.backgroundColor = 'black';
+            } else if (count === 0) {
+                document.body.style.backgroundColor = 'white';
+            } else if (count >= 1 && count <= 5) {
+                document.body.style.backgroundColor = 'blue';
+            } else if (count === 6) {
+                document.body.style.backgroundColor = 'yellow';
+            } else if (count >= 7 && count <= 10) {
+                document.body.style.backgroundColor = 'brown';
+            } else if (count > 10) {
+                document.body.style.backgroundColor = 'red';
+            }
+        }
+        function increment(){
+            count++
+            tagg.innerHTML = count
+            colorchange()
+            bodychange()
+        }
+        function decrement(){
+            count--
+            tagg.innerHTML = count
+            colorchange()
+            bodychange()
+        }
+        incc.onclick = increment
+        decc.onclick = decrement
+        colorchange()
+        bodychange()
+    </script>
+</body>
+</html>

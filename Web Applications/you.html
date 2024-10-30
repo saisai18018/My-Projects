@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 70vh;
+            width: 100vw;
+        }
+        #container{
+            width: 50vw;
+            height: 15vh;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7stGLtmEKOsAyJ3v5j6e5VSaVGALuXO1PR7h0-b9lH5tcSOb4" alt="">
+    <div id="container">
+        <div>
+            <h1 id="l"></h1>
+            <button id="like">LIKES</button>
+        </div>
+        <div>
+            <h1 id="d"></h1>
+            <button id="dislike">DISLIKE</button>
+        </div>
+        <h1 id="ld"></h1>
+    </div>
+    
+    
+    <script>
+        let Lbtn = document.getElementById('like')
+        let Dbtn = document.getElementById('dislike')
+        let l = document.querySelector('#l')
+        let d = document.querySelector('#d')
+        let ld = document.querySelector('#ld')
+        let likes = 0
+        let dislikes = 0
+        function inc(){
+            likes++
+            l.innerHTML = likes
+            Total()
+        }
+        function dec(){
+            dislikes++
+            d.innerHTML = dislikes
+            Total()
+        }
+        function Total() {
+            ld.innerHTML = `Total: ${likes + dislikes}`;
+        }
+        Lbtn.onclick = inc
+        Dbtn.onclick = dec
+
+    </script>
+</body>
+</html>

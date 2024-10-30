@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: radial-gradient(skyblue,grey)
+}
+
+h1{
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 5rem;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    
+    
+}
+.img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.one:hover{
+    background-color: aqua;
+    opacity: 0.5;
+}
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    font-size: 25px;
+    margin-top: 4rem;
+    
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0;
+   
+}
+#user, #comp{
+    font-size: 50px;
+    font-weight: lighter;
+}
+.select{
+    text-align: center;
+    margin-top: 50px;
+    margin-top: 5rem;
+}
+#msg{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    display: inline;
+    padding: 15px;
+    border-radius: 10px;
+}
+

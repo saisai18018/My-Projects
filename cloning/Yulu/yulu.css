@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.main .home-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(./images/Home_banner_overlay.png);
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    position: fixed;
+}
+
+nav .logo-in-head {
+    height: 60px;
+    width: 100px;
+    margin-left: 100px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: auto;
+}
+
+.nav-item {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font: 1.1em sans-serif;
+    font-weight: lighter;
+}
+
+.nav-item a:hover {
+    color: #00DCF7;
+    transition: color 0.2s ease;
+}
+
+#app a {
+    color: black;
+}
+
+#app {
+    background-color: #00DCF7;
+}
+
+#app a:hover {
+    color: white;
+}
+
+.inner-content button {
+    width: fit-content;
+    font-size: 20px;
+    padding: 12px 24px;
+    background-color: #00DCF7;
+    border: 1px solid gray;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+}
+
+.inner-content {
+    display: flex;
+    margin-top: 250px;
+    height: 100vh;
+    padding-left: 6%;
+    color: white;
+    flex-direction: column;
+}
+
+.inner-content h1 {
+    font-size: 65px;
+}
+
+.inner-content p {
+    font-size: 20px;
+}
+
+#dropdown {
+    position: relative;
+}
+
+#dropdown .inner-items {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    margin: 0;
+    background-color: aliceblue;
+    min-width: 230px;
+
+}
+
+#dropdown:hover .inner-items {
+    display: block;
+}
+
+#dropdown .inner-items .inner-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 15px 0px;
+}
+
+#dropdown .inner-items .inner-item img {
+    width: 50px;
+    height: 50px;
+}
+
+#dropdown .inner-items .inner-item img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+}
+
+#dropdown .inner-items .inner-item p:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+    color: #00DCF7;
+}
+
+.chat-div {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00DCF7;
+    padding: 7px 15px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px gray;
+}
+
+/* ____________________________________part-2_________________________________________ */
+.part-2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.part-2 .part-2-col-1 {
+    flex-grow: 2;
+    justify-content: center;
+    display: flex;
+}
+
+.part-2 .part-2-col-1 img {
+    width: 300px;
+    height: 100vh;
+}
+
+.part-2 .part-2-col-2 {
+    flex-grow: 1;
+    margin-top: 20px;
+
+}
+
+.part-2 .part-2-col-2 #part-2-col-content-div {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+.part-2 .part-2-col-2 .part-2-col-content {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    justify-content: center;
+    padding: 10px;
+    transition: all 0.4s ease;
+}
+
+.part-2 .part-2-col-2 .part-2-col-content:hover {
+    box-shadow: 0px 0px 10px gainsboro;
+    cursor: pointer;
+
+}
+
+.part-2 .part-2-col-3 {
+    flex-grow: 1;
+}
+
+.part-2 .part-2-col-3 img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* _____________________________________part-3______________________________ */
+.part-3 {
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width:480px) {
+    .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+        margin-left: auto;
+        flex-direction: column;
+    }
+
+    .part-2 .part-2-col-2 #part-2-col-content-div {
+        display: flex;
+        flex-direction: column;
+        overflow-x: scroll;
+        overflow: hidden;
+        height: 50vh;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+
+}
